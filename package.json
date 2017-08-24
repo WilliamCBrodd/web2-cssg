@@ -1,0 +1,28 @@
+{
+  "name": "web2-cssg",
+  "version": "1.0.0",
+  "description": "CSS Grafik med PTm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamCBrodd/web2-cssg.git"
+  },
+  "author": "WCB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilliamCBrodd/web2-cssg/issues"
+  },
+  "homepage": "https://github.com/WilliamCBrodd/web2-cssg#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "keywords": [
+    "CSS",
+    "Grafik"
+  ]
+}
