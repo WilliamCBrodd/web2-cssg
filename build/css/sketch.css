@@ -1,0 +1,39 @@
+body {
+  background: #210E3D; }
+
+.box {
+  border: solid 5px white;
+  display: block;
+  height: 400px;
+  width: 600px;
+  margin: auto;
+  margin-top: 8%;
+  position: relative; }
+
+.large-bottom-triangle {
+  background: #EA6C00;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  bottom: 5%;
+  height: 55%;
+  z-index: 1; }
+
+.medium-bottom-triangle {
+  background: #FDAD00;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 20%;
+  z-index: 2; }
+
+.large-top-triangle {
+  background: #FEEEB7;
+  position: absolute;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  height: 25%;
+  width: 30%;
+  left: 35%;
+  top: 15%; }
