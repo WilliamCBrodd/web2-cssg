@@ -49,3 +49,44 @@ body {
     top: 15%;
 
 }
+
+.medium-top-triangle-left {
+    position: absolute;
+    background: $sunglow;
+    clip-path: polygon(100% 0, 0 8%, 0% 100%);
+    width: 15%;
+    height: 25%;
+    left: 35%;
+    top: 15%;
+    
+}
+
+.medium-top-triangle-right {
+    position: absolute;
+    background: $sunglow;
+    clip-path: polygon(100% 8%, 0 0%, 100% 100%);
+    width: 15%;
+    height: 25%;
+    right: 35%;
+    top: 15%;
+}
+
+.top-triangle-left {
+    background: $chrome-yellow;
+    position: absolute;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    width: 10%;
+    height: 23%;   
+    top: 17%;
+    left: 25%; 
+}
+
+.top-triangle-right {
+    background: $chrome-yellow;
+    position: absolute;
+    clip-path: polygon(0% 0, 0 100%, 100% 100%);
+    width: 10%;
+    height: 23%;   
+    top: 17%;
+    right: 25%; 
+}
