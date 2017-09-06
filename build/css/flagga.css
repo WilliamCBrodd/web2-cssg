@@ -1,0 +1,19 @@
+.flagga {
+  background: #005b99;
+  width: 800px;
+  height: 500px;
+  position: relative; }
+  .flagga::before {
+    content: "";
+    background: #fcd116;
+    width: 13%;
+    height: 100%;
+    left: 25%;
+    position: absolute; }
+  .flagga::after {
+    content: "";
+    background: #fcd116;
+    width: 800px;
+    height: 20%;
+    top: 40%;
+    position: absolute; }

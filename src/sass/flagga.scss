@@ -1,0 +1,33 @@
+$bg-color: #005b99;
+$cross: #fcd116;
+$width: 800px;
+
+.flagga {
+    background: $bg-color;
+    width: $width;
+    height: $width*.625;
+    position: relative;
+
+
+
+    &::before {
+        content: "";
+        background: $cross;
+        width: 13%;
+        height: 100%;   
+        left: 25%;
+        position: absolute;    
+        
+    }
+
+    &::after {
+        content: "";
+        background: $cross;
+        width: $width; 
+        height: 20%;  
+        top: 40%;
+        position: absolute;     
+
+    }
+
+}
