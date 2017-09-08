@@ -1,0 +1,99 @@
+body {
+  background-color: #5E5B52; }
+
+.box {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  border: 2px solid white;
+  margin: auto;
+  margin-top: 5%;
+  z-index: 1; }
+
+.kamera {
+  position: absolute;
+  background-image: linear-gradient(to bottom, #E6E8E5, #E6E8E5 30%, #BB3430 30%, #BB3430 70%, #E6E8E5, 70%, #E6E8E5);
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 1.5rem;
+  z-index: 2; }
+
+.kamera::after {
+  content: "";
+  position: absolute;
+  background: #E6E8E5;
+  border-radius: 50%;
+  height: 60%;
+  width: 37.5%;
+  top: 20%;
+  left: 31.25%;
+  z-index: -1; }
+
+.knapp {
+  position: absolute;
+  background: black;
+  width: 10%;
+  height: 5%;
+  top: -5%;
+  left: 10%;
+  border-radius: 1.5rem 1.5rem 0 0; }
+
+.flash {
+  position: absolute;
+  background: lightblue;
+  width: 9.375%;
+  height: 15%;
+  top: 10%;
+  left: 80%;
+  border-radius: 50%;
+  border: 2px #43413a solid; }
+
+.lins-dark-gray {
+  position: absolute;
+  background: #43413a;
+  width: 31.25%;
+  height: 50%;
+  left: 34.375%;
+  overflow: hidden;
+  top: 25%;
+  border-radius: 50%; }
+
+.light-outer-ring {
+  position: absolute;
+  background: #5E5B52;
+  width: 85%;
+  height: 85%;
+  left: 7.5%;
+  top: 7.5%;
+  border-radius: 50%; }
+
+.light-outer-ring::after {
+  content: "";
+  position: absolute;
+  background: #504e46;
+  width: 85%;
+  height: 85%;
+  left: 7.5%;
+  top: 7.5%;
+  border-radius: 50%; }
+
+.dark-gray-iris {
+  position: absolute;
+  background: #43413a;
+  width: 40%;
+  height: 40%;
+  left: 30%;
+  top: 30%;
+  border-radius: 50%; }
+
+.dark-gray-iris::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  transform: rotate(45deg);
+  top: -200%;
+  left: -200%; }
