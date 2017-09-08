@@ -1,0 +1,100 @@
+$terminal: #1F1722;
+$bar: #C9D2CD;
+$arrow: #EBEBEB;
+$red: #F5665D;
+$yellow: #F7B444;
+$green: #29AA3F;
+
+body {
+    background: linear-gradient(
+        to left,
+        #FF5F6D,
+        #FFC371
+        );
+height: 100vh;
+margin: 0;
+padding: 0;
+}
+
+.box {
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    width: 800px;
+    height: 500px;
+    border: 2px white solid;
+}
+
+.black-window {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 15%;
+    background: $terminal;
+    border-radius: 0 0 1.5rem 1.5rem;
+    overflow: hidden;
+
+}
+
+.top-bar {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 10%;
+    top: 5%;
+    background: $bar;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.white-square {
+    position: absolute;
+    width: 37.5%;
+    height: 60%;
+    background: white;
+    top: 20%;
+    transform: rotate(45deg);
+}
+
+
+.white-square::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $terminal;
+    left: -15%;
+    top: 15%;
+}
+
+.cirkel {
+    position: absolute;
+    width: 3.907%;
+    height: 50%;
+    background: $red;
+    border-radius: 50%;
+    top: 25%;
+    left: 5%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $yellow;
+        border-radius: 50%;
+        left: 125%;
+    }   
+    
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $green;
+        border-radius: 50%;
+        left: 250%;
+    }
+}
+
+
