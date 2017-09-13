@@ -1,0 +1,20 @@
+body {
+  background: #F6D763; }
+
+.ball {
+  margin: auto;
+  background-image: linear-gradient(to bottom, #EE5365, #EE5365 47.5%, #40474A 47.5%, #40474A 52.5%, #FAFAFA 52.5%, #FAFAFA);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: relative; }
+  .ball::after {
+    content: "";
+    background: #FAFAFA;
+    width: 15%;
+    height: 15%;
+    top: 39%;
+    left: 39%;
+    position: absolute;
+    border-radius: 50%;
+    border: 20px solid #40474A; }
