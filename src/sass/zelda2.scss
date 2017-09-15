@@ -1,0 +1,106 @@
+@import 'zeldamixin';
+
+$size: 100px;
+
+$heart-one:
+"t", "g", "g", "t", "g", "g", "t",
+"g", "r", "r", "g", "r", "r", "g",
+"g", "r", "r", "g", "r", "r", "g",
+"t", "g", "r", "r", "r", "g", "t",
+"t", "t", "g", "r", "g", "t", "t",
+"t", "t", "t", "g", "t", "t", "t"
+;
+
+$heart-three:
+"t", "g", "g", "t", "g", "g", "t",
+"g", "r", "r", "g", "w", "w", "g",
+"g", "r", "r", "g", "w", "w", "g",
+"t", "g", "r", "r", "w", "g", "t",
+"t", "t", "g", "r", "g", "t", "t",
+"t", "t", "t", "g", "t", "t", "t"
+;
+
+$sword:
+"t", "t", "t", "b", "t", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"g", "g", "g", "g", "g", "g", "g",
+"g", "t", "b", "b", "b", "t", "g",
+"t", "t", "g", "g", "g", "t", "t",
+"t", "t", "b", "b", "b", "t", "t",
+"t", "t", "g", "g", "g", "t", "t",
+;
+
+
+$bg-color: #E3D081;
+
+body {
+    background: $bg-color;
+}
+
+.heart-wrapper {
+    //position: relative;
+    margin: 0 auto;
+    margin-top: $size*1/7;
+    width: $size*3+($size*1/7)*3;
+    overflow: auto;
+}
+
+.heart {
+    float: left;
+    height: $size*6/7;
+    margin-right: $size*1/7;
+    width: $size;
+}
+
+.sword {
+    //clear: both;
+    //float: left;
+    height: $size*6/7;
+    width: $size;
+}
+
+.sword-wrapper {
+    margin: 0 auto;
+    margin-top: $size*2/7;
+    width: $size+($size*1/7);
+}
+
+h1 {
+    position: relative;
+    font-size: 75px;
+    font-family: 'VT323', monospace;
+    color: white;
+    text-shadow: 0px 5px 5px rgba(150, 150, 150, 0.44);
+    float: left;
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: $size*3/7;
+    left: 24%;
+}
+
+.heart__one {
+    @include heartpixelcolors($heart-one);
+}
+
+.heart__two {
+    @include heartpixelcolors($heart-one);
+}
+
+.heart__three {
+    @include heartpixelcolors($heart-three);
+}
+
+.sword__one {
+    @include swordpixelcolors($sword);
+
+}

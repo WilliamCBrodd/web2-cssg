@@ -1,0 +1,54 @@
+@mixin heartpixelcolors ($heartmap) {
+
+    $heart-colors: (
+        t: transparent, 
+        g: #2D2D2E,
+        r: #DB133A,
+        w: #ffffff 
+
+    );
+
+    .px {
+        //background-color: map-get($heart-colors, "g");
+        height: (100%/6);
+        float: left;
+        width: (100%/7);
+    }
+
+    $num: 1; // Pixeln den kallar på
+
+    @each $value in $heartmap {
+        .px:nth-child(#{$num}) {
+            background-color: map-get($heart-colors, $value);
+        }
+
+        $num: $num + 1;
+    }
+
+}
+
+@mixin swordpixelcolors ($swordmap) {
+    $sword-colors: (
+        t: transparent,
+        b: #BF6F00,
+        g: #ACFD30
+    );    
+
+    .px {
+        //background-color: map-get($heart-colors, "g");
+        height: (100%/6);
+        float: left;
+        width: (100%/7);
+    }
+
+    $num: 1; //Pixeln vi kallar på inom svärd
+
+    @each $value in $swordmap {
+        .px:nth-child(#{$num}) {
+            background-color: map-get($sword-colors, $value);
+        }
+
+        $num: $num + 1;
+    }
+
+}
